@@ -1,0 +1,29 @@
+Map, Reduce & Filter functions YT video:
+https://www.youtube.com/watch?v=cAXyP9SBFIk&list=PL_HlKez9XCSM0bs8P7LtCTGh4rghAD2im&index=5
+
+call, bind & apply
+
+Interview question:
+Q. What is a closure?
+A. A closure gives you access to an outer function's scope from an inner function.
+Ex. 1. function initPart(){
+        var name = "Abhijith";
+        function displayName(){
+            console.log('name is',name);
+        }
+        displayName();
+       }
+        initPart();
+
+    2. function add(a,b){
+            if(!b){
+                return function (c){
+                    return a + c;
+                }
+            }
+            return a + b;
+        }
+        console.log(add(3)(3));
+        console.log(add(3,3));
+
+Q. 
