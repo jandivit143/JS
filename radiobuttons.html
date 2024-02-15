@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+</head>
+<body>
+    <input type="radio" name="languages" value="Javascript" id="">Javascript<br>
+    <input type="radio" name="languages" value="Python" id="">Python<br>
+    <input type="radio" name="languages" value="C++" id="">C++<br>
+    <button onclick="show();">show the selected language</button>
+    <h1 id="result">The selected language is...</h1>
+</body>
+</html>
+<script>
+    var language = document.getElementsByName('languages');
+    function show(){
+        // alert(language.length);
+        for(var i=0;i<language.length;i++){
+            if(language[i].checked){
+                document.getElementById('result').innerHTML=language[i].value;
+            }
+        }
+    }
+</script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h1 id="text">This is button</h1>
+    <!-- <button onclick="action();">click me!</button> -->
+    <button onclick="action('python');">click me!</button>
+    <script>
+        // normal function examples:
+
+        // without parameters
+        // function action(){
+        //     document.getElementById("text").innerHTML = "You clicked the button!";
+        // }
+
+        // with parameters
+        // function action(language){
+        //     document.getElementById("text").innerHTML = "You clicked the button!";
+        //     alert(language);
+        // }
+
+        // arrow function examples:
+
+        // if we have only one line of statement in function
+        // action = () => document.getElementById("text").innerHTML = "You clicked the button!";
+        
+        // if we have more than one line of statements in function
+        // without parameters
+        // action = () => {
+        //     document.getElementById("text").innerHTML = "You clicked the button!";
+        //     alert('the button is clicked!');
+        // }
+
+        // with parameters
+        action = (language) => {
+            document.getElementById("text").innerHTML = "You clicked the button!";
+            alert(language);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML access in JS</title>
+</head>
+<body>
+    <h1 id="introtext">This is Javascript!</h1>
+    <h1 class="introclass">This is first h1 tag!</h1>
+    <h1 class="introclass">This is second h1 tag!</h1>
+    <h1 name="introname">Using h1 tag with name attribute!</h1>
+    <h1>Using h1 tag!</h1>
+</body>
+</html>
+<script>
+    // accessing by id
+    // var x = document.getElementById('introtext');
+    // x.innerHTML = 'The h1 tag is accessed';
+    // x.style.backgroundColor = 'red';
+    // x.style.width = 'fit-content';
+
+    // accessing by className
+    // var y = document.getElementsByClassName('introclass');
+    // y[0].innerHTML = 'The first h1 tag is accessed';
+    // y[0].style.color = 'yellow';
+    // y[1].innerHTML = 'The second h1 tag is accessed';
+
+    // accessing by name
+    // var x = document.getElementsByName('introname');
+    // x[0].innerHTML = 'This is using name attribute';
+
+    // accessing by tagName
+    var x = document.getElementsByTagName('h1');
+    x[4].innerHTML = 'Changed tag name content';
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <style>
+        input,label,select{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration</h1>
+    <form onsubmit="display();return false">
+        <input type="text" placeholder="firstname" id="firstname"><br>
+        <input type="text" placeholder="lastname" id="lastname"><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male" id="gender">Male
+        <input type="radio" name="gender" value="female" id="gender">Female<br>
+        <label for="language">Select language</label>
+        <select name="" id="language">
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+        </select><br>
+        <label for="platform">Platform</label>
+        <input type="checkbox" value="online" id="online">Online
+        <input type="checkbox" value="offline" id="offline">Offline<br>
+        <input type="submit" value="register">
+    </form>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+    function display(){
+        var gender;
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById('lastname').value;
+        var language = document.getElementById('language').value;
+        var genders = document.getElementsByName('gender');
+        for(var i=0;i<genders.length;i++){
+            if(genders[i].checked){
+                gender = genders[i].value;
+            }
+        }
+        var online = document.getElementById('online');
+        var offline = document.getElementById('offline');
+        var platforms=[];
+        if(online.checked){
+            platforms.push(online.value);
+        }
+        if(offline.checked){
+            platforms.push(offline.value)
+        }
+        var result = document.getElementById('result');
+        result.innerHTML = 'Firstname: ' + firstname + '<br> Lastname: ' + lastname + '<br> Language: '
+        + language + '<br> Gender: ' + gender + '<br> Platform: ' + platforms;
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <style>
+        input,button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="number1" id="number1"><br>
+    <input type="text" placeholder="number2" id="number2"><br>
+    <button onclick="add();">Add</button>
+</body>
+</html>
+<script>
+    function add(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        number1 = Number(number1);
+        number2 = Number(number2);
+        alert(number1 + ' + ' + number2 + ' is ' + (number1+number2));
+    }
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1 id="username">Username in localstorage is:</h1>
+    <h1 id="language">Language in localstorage is:</h1>
+    <button onclick="removeLSItem();">Remove LS Item</button>
+    <button onclick="clearAll();">Clear LS Item</button>
+</body>
+</html>
+<script>
+    localStorage.setItem('username', 'Abhijith');
+    localStorage.setItem('language', 'Javascript');
+    localStorage.setItem('gender', 'Male');
+    var x = document.getElementById('username');
+    var y = document.getElementById('language');
+    x.innerHTML = 'Username in localstorage is: ' + localStorage.getItem('username');
+    y.innerHTML = 'Language in localstorage is: ' + localStorage.getItem('language');
+    function removeLSItem(){
+        localStorage.removeItem('language');
+    }
+
+    function clearAll(){
+        localStorage.clear();
+        // console.log('6451');
+    }
+</script>

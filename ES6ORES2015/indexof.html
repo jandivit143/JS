@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexOf</title>
+</head>
+<body>
+    <h1 id="numbers"></h1>
+    <h1 id="strings"></h1>
+    <input type="text" id="search"><br><br>
+    <button id="find" onclick="searchelement();">Find</button>
+    <script>
+        var numbers = [2,3,4,7,8,6,1];
+        // var myStrings = ['react', 'angular', 'vue'];
+        document.getElementById('numbers').innerHTML = numbers;
+        // document.getElementById('strings').innerHTML = myStrings;
+        function searchelement() {
+            var inputvalue = document.getElementById('search').value;
+            inputvalue = Number(inputvalue);
+            var result = numbers.indexOf(inputvalue);
+            if(result == -1){
+                alert('The number ' + inputvalue + ' is not present in the array');
+            }else{
+                alert('The number ' + inputvalue + ' is present in the array in the index ' + result);
+            }
+        }
+    </script>
+</body>
+</html>

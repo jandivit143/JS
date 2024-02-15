@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            height: 100vh;
+        }
+        .col-md-4{
+            margin-top: 100px;
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <h1>Authentication</h1>
+            <form onsubmit="validate();">
+                <input type="text" placeholder="username" class="form-control" id="username" required>
+                <input type="password" placeholder="password" class="form-control" id="password" required>
+                <input type="submit" value="login" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function validate(){
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        if(username == "javascript" && password == "udemy"){
+            alert('login success');
+        }else{
+            alert('invalid login credential');
+        }
+    }
+</script>

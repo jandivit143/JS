@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <script>
+        var student = {
+            'name': 'Ronaldo',
+            'age': 21,
+            'email': 'ronaldo07@gmail.com',
+            'marks': [90, 84, 99, 92, 80, 88],
+            getAddress : function(){
+                return this.name + ' from Flat: 104, Gangaram, Chandanagar, Hyd - 50';
+            }
+        };
+        // document.write(student.marks);
+        document.write(student.getAddress());
+    </script>
+</body>
+</html>

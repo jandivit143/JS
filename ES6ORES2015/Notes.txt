@@ -1,0 +1,10 @@
+ECMAScript 2015 or ES2015 is a significant update to javescript programming language. It is the first major
+update to the language since ES5 which was established in 2009. Therefore, ES2015 is often called ES6.
+ES6 Features:
+=> Let keyword
+=> Const keyword
+=> Maps
+=> Arrow functions
+=> Spread operator
+=> Classes
+=> For of

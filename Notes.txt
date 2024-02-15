@@ -1,0 +1,21 @@
+Javascript is an object oriented computer programming language commonly used to create interactive effects
+within web browsers. Javascript is a client-side scripting language developed by Brendan Eich.
+Advantages of Javascript:
+=> interactive websites
+=> web and mobile apps
+=> game development
+=> serverside scripting
+
+DOM:
+Accessing HTML Elements in Javascript
+Ex: <h1>This is header tag</h1>
+Properties used for accessing HTML Elements in JS
+1. name
+2. id
+3. Tag
+4. class
+Ex: <h1 name="a" id="b" class="v">This is header tag</h1>
+var x = document.getElementsByName("a");
+var x = document.getElementById("b");
+var x = document.getElementsByClassName("v")
+var x = document.getElementsByTagName("h1")

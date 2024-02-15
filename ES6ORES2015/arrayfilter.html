@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Filter</title>
+</head>
+<body>
+    <h1 id="elements"></h1>
+</body>
+</html>
+<script>
+    // using numbers array
+    // var numbers = [3,6,9,5,7,2];
+    // numbers = numbers.filter((number) => {return number > 5});
+    // document.getElementById('elements').innerHTML = numbers;
+    
+    // using strings array
+    var myStrings = ['dhoni', 'virat', 'sachin', 'ronaldo', 'messi'];
+    myStrings = myStrings.filter((name) => {return name.includes('o')});
+    document.getElementById('elements').innerHTML = myStrings;
+</script>

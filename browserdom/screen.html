@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Property</title>
+</head>
+<body>
+    <h1 id="height">Screen height of the window is: </h1>
+    <h1 id="width">Screen width of the window is: </h1>
+</body>
+</html>
+<script>
+    var h = document.getElementById('height');
+    var w = document.getElementById('width');
+    h.innerHTML = 'Screen height of the window is ' + screen.height;
+    w.innerHTML = 'Screen width of the window is ' + screen.width;
+</script>
